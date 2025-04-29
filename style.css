@@ -1,0 +1,661 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.navbar div{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
+nav .webName{
+    font-size: 25px;
+    font-weight: 400;
+    color: lawngreen;
+    cursor: pointer;
+}
+nav .webName:hover{
+    color: blue;
+    transition: 0.5s all;
+}
+nav .navbar{
+    display: flex;
+    padding: 20px 50px;
+}
+nav .navbar div{
+    margin: 0px 20px;
+}
+nav .navbar div a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.navbar button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 300px;
+    cursor: pointer;
+}
+.navbar button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+nav .navbar div:hover{
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.scrolled{
+    background-color: black;
+}
+
+main{
+    height: 800px;
+    width: 100%;
+    background-color: rgb(223, 203, 203);
+    display: flex;
+}
+main section{
+    width:65%;
+    height: 800px;
+    background-color: black;
+}
+main section h1{
+    color: white;
+    font-size: 100px;
+    font-weight: 400;
+    position: relative;
+    margin: 30px;
+    margin-left: 100px;
+    margin-top: 180px;
+}
+main section h2{
+    color: white;
+    border: 3px solid lawngreen;
+    background: gray;
+    margin-left: 100px;
+    margin-top: 80px;
+    height: 50px;
+    width: 350px;
+    display: inline-block;
+    padding: 7px 23px;
+    font-weight: 600;
+    letter-spacing: 8px;
+}
+
+main section button{
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 100px;
+    height: 50px;
+    width: 200px;
+    background-color: rgb(37, 34, 34);
+    cursor: pointer;
+}
+main section button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+main section .review{
+    display: flex;
+}
+main section h4{
+    color: goldenrod;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 800;
+}
+main section p{
+    color: white;
+    font-size: 20px;
+}
+.brands{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 280px;
+    width: 100%;
+}
+.brands img{
+    width: 17%;
+    height: 220px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+/* .brands img:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+    background-color: transparent;
+} */
+main aside{
+    width: 35%;
+    height: 800px;
+    background-color: lawngreen;
+}
+main aside img{
+    height: 93.5%;
+    width: 80%;
+    margin-left: -120px;
+    margin-top: 52px;
+}
+
+.Services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+.Services .servicesleft{
+    width: 40%;
+    height: auto;
+}
+.Services .servicesleft h1{
+    color: rgb(115, 115, 115);
+    padding: 50px 80px 0px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.Services .servicesleft p{
+    font-size: 45px;
+    padding-left: 80px;
+}
+.Services .servicesright{
+    width: 60%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+}
+.Services .servicesright .wd{
+    width: 80%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+.Services .servicesright .wd:hover{
+    background-color: lawngreen;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 10px black;
+    border: none;
+}
+
+
+
+.Services .servicesright .wd div{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.Services .servicesright .wd div i{
+    font-size: 30px;
+    padding: 5px;
+}
+.Services .servicesright .wd h1{
+    margin-top: 35px;
+    margin-left: 20px;
+}
+.Services .servicesright .wd p{
+    margin-top: 120px;
+    margin-left: -100px;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: rgb(95, 94, 94);
+}
+.featured .name h1{
+    text-align: center;
+    font-size: 45px;
+}
+.featured .photo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* display: block; */
+}
+.featured .photo img{
+    width: 90%;
+    height: 550px;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 0%;
+}
+.featured .photo .project{
+    height: 200px;
+    width: 400px;
+    background-color: transparent;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 350px;
+    margin-left: -850px;
+}
+.featured .photo .project:hover{
+    transition: 0.5s all;
+    box-shadow: 0px 0px 30px rgb(255, 255, 255);
+
+}
+.featured .photo .project h1{
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+.featured .photo .project p{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.featured .photo .project button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 40%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.featured .photo .project button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 30px rgb(38, 255, 0);
+}
+
+.process{
+    width: 100%;
+    height: 500px;
+    background-color: aqua;
+}
+.aboutM{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.aboutM .leftabout{
+    width: 50%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutM .leftabout .circal{
+    height: 400px;
+    width: 400px;
+    background-color: lawngreen;
+    border-radius: 50%;
+    margin-top: 90px;
+}
+.aboutM .leftabout .circal img{
+    width: 80%;
+    margin-top: -130px;
+    margin-left: 40px;
+}
+.aboutM .leftabout .circal img:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+
+.aboutM .rightabout{
+    width: 50%;
+    height: 600px;
+    padding-top: 50px;
+}
+.aboutM .rightabout label{
+    color: white;
+    letter-spacing: 5px;
+    margin: 50px;
+}
+.aboutM .rightabout h2{
+    color: white;
+    font-size: 40px;
+    margin: 50px;
+}
+.aboutM .rightabout p{
+    color: white;
+    font-size: 18px;
+    margin: 50px;
+}
+.aboutM .rightabout .icon{
+    display: flex;
+}
+.aboutM .rightabout .icon div{
+    height: 50px;
+    width: 50px;
+    margin-left: 50px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutM .rightabout .icon i{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+.aboutM .rightabout .icon div:hover{
+    background-color: white;
+    color: black;
+}
+.aboutM .rightabout .icon i:hover{
+    background-color: white;
+    color: black;
+}
+.Clientsdetel{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.Clientsdetel h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 50px;
+}
+.Clientsdetel .review{
+    width: 30%;
+    height: 400PX;
+    border: 1px solid rgb(185, 183, 183);
+    border-radius: 10px;
+    padding: 40px;
+    margin: 10PX;
+}
+.Clientsdetel .review:hover{
+    background-color: lawngreen;
+    transition: 0.5s all;
+    box-shadow: 5px 5px 10px black;
+    border: none;
+}
+.Clientsdetel div h3{
+    padding: 10px;
+}
+.Clientsdetel div p{
+    color: rgb(45, 45, 45);
+    margin: 10px;
+}
+.Clientsdetel .review .smallimg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+
+.Clientsdetel .review .smallimg img:hover{
+    transition: all 1s;
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 30px rgb(255, 0, 0);
+}
+.Clientsdetel .review .smallimg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.Clientsdetel .review .imgname{
+    margin-left: 120px;
+    margin-top: -50px;
+}
+/* .Clientsdetel .review .imgname h2:hover{
+    transition: 0.5s all;
+    box-shadow: 0px 0px 30px rgb(0, 106, 255);
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+} */
+
+.Contact{
+    height: 800px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.Contact .Contactleft{
+    height: 650px;
+    width: 45%;
+    border-radius: 20px;
+    border: 1px solid rgb(86, 86, 86);
+    background-color: rgb(18, 18, 18);
+    margin-left: 100px;
+    margin-top: 85px;
+}
+.Contact .Contactleft:hover{
+    transition: 1s all;
+    box-shadow: 0px 0px 50px lawngreen;
+}
+.Contact .Contactleft h3{
+    color: rgb(150, 150, 150);
+    margin-left: 50PX;
+    margin-top: 50PX;
+    letter-spacing: 2px;
+}
+.Contact .Contactleft h1{
+    color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 40px;
+}
+.Contact .Contactleft p{
+    color: rgb(153, 152, 152);
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.formM{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin: 20px;
+}
+.fromN{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 10px;
+    color: rgb(179, 177, 177);
+    font-size: 18px;
+}
+input{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(151, 151, 151);
+    margin-bottom: 10px;
+    color: white;
+}
+input:hover{
+    transition: 0.5s all;
+    box-shadow: 0px 0px 20px lawngreen;}
+textarea{
+    width: 93%;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 1px solid rgb(151, 151, 151);
+    color: rgb(86, 86, 86);
+    height: 100px;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+}
+textarea:hover{
+    transition: 0.5s all;
+    box-shadow: 0px 0px 20px lawngreen;}
+.formS label{
+    margin-left: 20px;
+}
+.formS input{
+    margin-left: 20px;
+    width: 93%;
+}
+.btnS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnS button{
+    height: 50px;
+    width: 93%;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.btnS button:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(101, 101, 101);
+    transition: 0.5s all;
+    box-shadow: 0px 0px 20px lawngreen;
+}
+
+.Contact .Contactright{
+    height: 650px;
+    width: 40%;
+    border-radius: 20px;
+    /* border: 1px solid rgb(151, 151, 151); */
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+.Contact .Contactright h3{
+    color: white;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+.Contact .Contactright .box1{
+    height: 70px;
+    width: 70px;
+    background-color: rgb(61, 61, 61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    border-radius: 10px;
+}
+.Contact .Contactright .add{
+    margin-top: -65px;
+    margin-left: 190px;
+}
+.Contact .Contactright .add p{
+    color: white;
+    font-size: 22px;
+}
+.Contact .Contactright .box1 i{
+    color: white;
+    font-size: 30px;
+}
+.Contact .Contactright .box1:hover{
+    background-color: white;
+    transition: 0.5s all;
+}
+.Contact .Contactright i:hover{
+    color: black;
+    transition: 0.5s all;
+}
+.Contact .Contactright .map{
+    border: 1px solid rgb(191, 189, 189);
+    margin-left: 150px;
+    margin-top: 40px;
+    height: 300px;
+    border-radius: 20px;
+
+}
+.Contact .Contactright .map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.Contact .Contactright .map iframe:hover{
+    transition: 0.5s all;
+    box-shadow: 0px 0px 30px lawngreen;
+}
+
+
+
+
+.up{
+    height: 50px;
+    width: 70px;
+    background-color: lawngreen;
+    border-radius: 15%;
+    position: fixed;
+    top: 600px;
+    margin-left: 94%;
+    display: flex;
+}
+.up div{
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.up div i{
+    height: 100%;
+    font-size: 30px;
+}
+.up div i:hover{
+    transition: 1s all;
+    transform: rotate(360deg);
+}
+
+footer{
+    background-color: black;
+    border-top: 1px solid rgb(72, 72, 72);
+    height: 40px;
+}
+footer p{
+    color: rgb(154, 152, 152);
+    text-align: center;
+    padding-top: 10px;
+}
